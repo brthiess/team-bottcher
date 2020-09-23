@@ -1,0 +1,8 @@
+- name: Home
+  link: /
+- name: Team
+  link: /team/
+- name: Sponsors
+  link: /sponsors/
+- name: Media
+  link: /media/  

@@ -1,0 +1,11 @@
+<section class='header-container'>
+    <div class='header-sub-container'>
+        <nav>
+            {% for item in site.data.navigation %}
+                <a href="{{ item.link }}" class="nav-link {% if page.url == item.link %}active{% endif %}">
+                    {{ item.name }}
+                </a>
+            {% endfor %}
+        </nav>
+    </div>
+</section>

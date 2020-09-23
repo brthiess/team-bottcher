@@ -1,0 +1,12 @@
+<section class='banner {% if include.subpage %} sub-page {% endif %}'>
+    <div class='banner-logo {% if include.subpage %} sub-page {% endif %}'>
+        <img src='/assets/images/{% if include.subpage %}logo2-inverted-no-text.png{% else %}logo2-no-text.png{% endif %}' class='banner-logo-image {% if include.subpage %} sub-page-image {% endif %}'>
+    </div>
+    {% if include.subpage %}
+        {% include logo-text.html color="black" subpage="true" %}
+    {% else %}
+        {% include logo-text.html color="white" %}
+    {% endif %}
+
+</section>
+
